@@ -21,16 +21,16 @@ header {
 }
 
 header img {
-    width: 80px;
+    width: 280px;
 }
 
-header ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 10px;
 }
 
-header ul li {
+nav ul li {
     background-color: aquamarine;
     padding: 5px 8px;
     border-radius: 10px;

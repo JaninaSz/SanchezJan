@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web site en desarrollo" />
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/app.js"></script>
     <title>Proyecto Final</title>
@@ -12,26 +13,29 @@
 
 <body>
     <header>
-        <img src="" alt="">
-        <h1>Rick and Morty</h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Personajes</li>
-                <li>Ver en vivo</li>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Personajes</li></a>
+                <a href=""><li>Ver en vivo</li></a>
             </ul>
-        </nav>
+        </nav> <img src="img/title-RM.png" alt="title">
+
+        <form class="frmBuscar" role="search">
+            <input type="search" placeholder="Buscar por ID..." aria-label="Search" />
+        </form>
     </header>
     <main id="contMain">
-        <section>
-            Sinopsis
-            bibliografia
-        </section>
-        <h2>Personajes</h2>
         <hr>
+        <section>
+            <h1>Rick and Morty</h1>
+            Sinopsis
+            Bibliografía
+        </section>
+        <hr>
+        <h2>Personajes</h2>
         <section class="sctPersonajes" id="sctPersonajes">
-
-
+            <!--grilla-->
         </section>
     </main>
     <footer>
