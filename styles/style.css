@@ -3,10 +3,15 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #3f3f3f;
+}
+.bd-margin{
+    margin: 25px 50px;
+}
 header,
 main, .sctPersonajes,
-footer {
+.sctEpisodios, .sctTemp,footer {
     padding: 20px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -14,17 +19,18 @@ footer {
 }
 
 header {
-    background-color: yellowgreen;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 header img {
     width: 280px;
 }
 
-nav ul {
+ul {
     list-style: none;
     display: flex;
     gap: 10px;
@@ -36,20 +42,39 @@ nav ul li {
     border-radius: 10px;
     cursor: pointer;
 }
-
+.frmBuscar{
+    max-width: 200px;
+}
 main {
-    background-color: blanchedalmond;
-    color: blue;
+    background-color: rgb(197, 223, 240);
+    color: rgb(20, 173, 58);
     
     min-height: 80vh;
+}
+main ul li {
+    background-color: black;
+    padding: 5px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: bisque;
 }
 main .sctPersonajes{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-main .dvPersonajes {
-    background-color: aquamarine;
+.contMain{
+    background-image: url("/img/back.jpg");
+    background-repeat: no-repeat;
+}
+.sctTemp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+main .dvEpisodios, .dvPersonajes {
+    background-color:  #3f3f3f;
     width: 200px;
     justify-self: center;
     text-align: center;
@@ -63,6 +88,141 @@ main .dvPersonajes img {
     border-radius: 50%;
 }
 
+main .sctEpisodios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+main .dvEpisodios {
+    width: 350px;
+    justify-self: center;
+    text-align: left;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+.accordion{
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color:aquamarine;
+}
+
+.accordion__label, .accordion__content{
+    padding: 14px 20px;
+}
+.accordion__label{
+    display: block;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+}
+.accordion__label:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.section1{
+    display: block;
+}
+.accordion__content{
+    background: #252525;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+
+.accordion__input{
+    display: none;
+}
+
+.accordion__input:checked ~ .accordion__content{
+    display: block;
+}
+
+button{
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ol {
+    list-style: none;
+}
+li{
+    text-decoration: none;
+    padding: 5px 8px;
+}
+.invisible{
+    color: #b7ddec;
+
+}
+.cont-btn{
+    text-align: center;
+}
+h3{
+    color: yellowgreen;
+}
+
 footer {
     background-color: beige;
+}
+
+/*================================================*/
+
+@media(max-width:880px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .img-title {
+        width: 55px;
+    }
+
+    .sctEpisodios, .sctPersonajes {
+        grid-template-columns: 1fr 1fr;
+    }
+    .sctTemp  {
+        max-width: 400px;
+    }
+    .st-conts form {
+        width: 100px;
+    }
+
+    .cont-footer {
+        flex-direction: column;
+    }
+
+    .cont-footer div {
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100px;
+    }
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .img-title {
+        width: 35px;
+    }
+
+    .sctEpisodios, .sctPersonajes{
+        grid-template-columns: 1fr;
+    }
+    .sctTemp  {
+        max-width: 400px;
+    }
+    .st-conts form {
+        width: 100px;
+
+
+    }
 }
