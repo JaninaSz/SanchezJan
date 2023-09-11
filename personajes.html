@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Web site en desarrollo" />
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
     <script src="scripts/app.js"></script>
     <title>Proyecto Final</title>
 </head>
@@ -21,12 +23,14 @@
                 <a href="personajes.html"><li>Personajes</li></a>
                 <a href="episodios.html"><li>Ver capítulos</li></a>
             </ul>
-        </nav> <img src="img/title-RM.png" alt="title">
+        </nav> 
+        <div class="cont-head">
+        <img src="img/title-RM.png" alt="title">
 
         <form class="frmBuscar" role="search">
             <input type="search" placeholder="Buscar por ID (1 - 826)..." aria-label="Search" />
             <button onclick="buscar()">Buscar</button>
-        </form>
+        </form></div>
     </header>
     <main id="contMain">
         <hr>
@@ -53,13 +57,16 @@
             <!--grilla-->
         </section>
         <div class="cont-btn">
-        <button>Anterior </button>
+        <button class="btnAnt" disabled>Anterior </button>
         <a href="#top"><button>Ir arriba</button></a>
-        <button>Siguiente </button>
+        <button class="btnSig" disabled>Siguiente </button>
     </div>
     </main>
     <footer>
-        <h4>Diseñado por: <a href="https://www.instagram.com/" target="_blank">Nina</a> | © Copyright. Todos los derechos reservados.</h4>
+        <div class="cont-footer">
+            <span>Diseñado por: <a href="https://www.instagram.com/" target="_blank">Nina</a> </span>
+            <p>© Copyright. Todos los derechos reservados.</p>
+        </div>
     </footer>
     </div>
 </body>

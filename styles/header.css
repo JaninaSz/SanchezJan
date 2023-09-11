@@ -1,0 +1,47 @@
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header img {
+    width: 280px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    background-color: aquamarine;
+    padding: 5px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cont-head{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.frmBuscar{
+    max-width: 200px;
+}
+
+.cont-btn{
+    text-align: center;
+}
+button{
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}

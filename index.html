@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Web site en desarrollo" />
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
     <script src="scripts/app.js"></script>
     <title>Proyecto Final</title>
 </head>
@@ -15,19 +17,26 @@
     <header>
         <nav>
             <ul>
-                <a href="/"><li>Home</li></a>
-                <a href="personajes.html"><li>Personajes</li></a>
-                <a href="episodios.html"><li>Ver capítulos</li></a>
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="personajes.html">
+                    <li>Personajes</li>
+                </a>
+                <a href="episodios.html">
+                    <li>Ver capítulos</li>
+                </a>
             </ul>
         </nav> <img class="imgTitle" src="img/title-RM.png" alt="title">
-        
+
     </header>
     <main class="contMain" id="contMain">
-        
+
         <p>Te enseñará a respetar a los mayores. <br>
-        Aún cuando se trata de un alcohólico peligroso, delirante que 
+            Aún cuando se trata de un alcohólico peligroso, delirante que
             vive en una realidad paralela y que... es tu propio abuelo.
-        </p><br><hr> <br>
+        </p><br>
+        <hr> <br>
         <section>
             <div class="accordion">
                 <div onload="mostrar()" class="section1">
@@ -35,9 +44,9 @@
                     <label for="section1" class="accordion__label">Sinopsis</label>
                     <div class="accordion__content">
                         <p>
-                            La serie sigue las desventuras de un científico, Rick Sanchez, 
-                            y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo 
-                            entre la vida doméstica y los viajes espaciales, temporales e intergalácticos. 
+                            La serie sigue las desventuras de un científico, Rick Sanchez,
+                            y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo
+                            entre la vida doméstica y los viajes espaciales, temporales e intergalácticos.
                         </p>
                     </div>
                 </div>
@@ -45,16 +54,19 @@
                     <input type="checkbox" id="section2" class="accordion__input">
                     <label for="section2" class="accordion__label">Argumento</label>
                     <div class="accordion__content">
-                        <p> Rick Sánchez es un ejemplo del típico "científico loco". 
-                            Es un genio, pero es irresponsable, alcohólico, egoísta, un poco depresivo y con poca cordura. 
-                            Rick por diferentes razones termina mudándose a la casa de su hija Beth y en ese momento se 
-                            encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy listo. 
-                            Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del cosmos y universos paralelos. 
-                            Y es mediante tantas vivencias y reflexiones que Rick busca que su nieto Morty no acabe como su padre, 
-                            Jerry, un hombre muy poco exitoso que a pesar de tener buenas intenciones resulta ser 
+                        <p> Rick Sánchez es un ejemplo del típico "científico loco".
+                            Es un genio, pero es irresponsable, alcohólico, egoísta, un poco depresivo y con poca
+                            cordura.
+                            Rick por diferentes razones termina mudándose a la casa de su hija Beth y en ese momento se
+                            encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy listo.
+                            Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del cosmos
+                            y universos paralelos.
+                            Y es mediante tantas vivencias y reflexiones que Rick busca que su nieto Morty no acabe como
+                            su padre,
+                            Jerry, un hombre muy poco exitoso que a pesar de tener buenas intenciones resulta ser
                             bastante inútil en muchas ocasiones y depende mucho de su esposa, Beth, hija de Rick.
 
-                            A pesar de estar muy apegados, Rick y su nieto experimentan momentos en los que Summer, 
+                            A pesar de estar muy apegados, Rick y su nieto experimentan momentos en los que Summer,
                             hermana de Morty, se une en ocasiones a las pintorescas aventuras provocadas por Rick.</p>
                     </div>
                 </div>
@@ -63,20 +75,28 @@
                     <label for="section3" class="accordion__label">Biografías wiki</label>
                     <div class="accordion__content">
                         <ol>
-                            <li><a link href="https://es.wikipedia.org/wiki/Justin_Roiland"><b>Rick Sánchez</b> - (Justin_Roiland)</a></li>
-                            <li><a link href="https://es.wikipedia.org/wiki/Justin_Roiland"><b>Morty Smith</b> - (Justin_Roiland)</a></li>
-                            <li><a link href="https://es.wikipedia.org/wiki/Chris_Parnell "><b>Jerry Smith</b> - (Chris_Parnell)</a></li>
-                            <li><a link href="https://es.wikipedia.org/wiki/Spencer_Grammer"><b>Summer Smith</b> - (Spencer_Grammer)</a></li>
-                            <li><a link href="https://es.wikipedia.org/wiki/Sarah_Chalke"><b>Beth Smith</b> - (Sarah_Chalke)</a></li>
+                            <li><a link href="https://es.wikipedia.org/wiki/Justin_Roiland"><b>Rick Sánchez</b> -
+                                    (Justin_Roiland)</a></li>
+                            <li><a link href="https://es.wikipedia.org/wiki/Justin_Roiland"><b>Morty Smith</b> -
+                                    (Justin_Roiland)</a></li>
+                            <li><a link href="https://es.wikipedia.org/wiki/Chris_Parnell "><b>Jerry Smith</b> -
+                                    (Chris_Parnell)</a></li>
+                            <li><a link href="https://es.wikipedia.org/wiki/Spencer_Grammer"><b>Summer Smith</b> -
+                                    (Spencer_Grammer)</a></li>
+                            <li><a link href="https://es.wikipedia.org/wiki/Sarah_Chalke"><b>Beth Smith</b> -
+                                    (Sarah_Chalke)</a></li>
                         </ol>
                     </div>
                 </div>
-                
-        </section>   
-        
+
+        </section>
+
     </main>
     <footer>
-        <h4>Sitio en desarrollo</h4>
+        <div class="cont-footer">
+            <h4>Diseñado por: <a href="https://www.instagram.com/" target="_blank">Nina</a> | © Copyright. Todos los
+                derechos reservados.</h4>
+        </div>
     </footer>
 </body>
 

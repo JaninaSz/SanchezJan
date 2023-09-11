@@ -18,33 +18,6 @@ main, .sctPersonajes,
 
 }
 
-header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-header img {
-    width: 280px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-nav ul li {
-    background-color: aquamarine;
-    padding: 5px 8px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.frmBuscar{
-    max-width: 200px;
-}
 main {
     background-color: rgb(197, 223, 240);
     color: rgb(20, 173, 58);
@@ -65,7 +38,8 @@ main .sctPersonajes{
 }
 .contMain{
     background-image: url("/img/back.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    
 }
 .sctTemp {
     display: flex;
@@ -124,6 +98,7 @@ main .dvEpisodios {
 .accordion__label:hover{
     background-color: rgba(0, 0, 0, 0.1);
 }
+
 .section1{
     display: block;
 }
@@ -142,87 +117,37 @@ main .dvEpisodios {
     display: block;
 }
 
-button{
-    padding: 5px;
-    width: 150px;
-    text-align: center;
-    margin: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-}
 ol {
     list-style: none;
 }
+
 li{
     text-decoration: none;
     padding: 5px 8px;
 }
 .invisible{
     color: #b7ddec;
+}
 
-}
-.cont-btn{
-    text-align: center;
-}
 h3{
     color: yellowgreen;
 }
-
+.cont-btn{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.cont-gif{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.cont-gif img{
+    width: 200px;
+}
 footer {
     background-color: beige;
 }
-
-/*================================================*/
-
-@media(max-width:880px) {
-
-    h1 {
-        font-size: 35px;
-    }
-
-    .img-title {
-        width: 55px;
-    }
-
-    .sctEpisodios, .sctPersonajes {
-        grid-template-columns: 1fr 1fr;
-    }
-    .sctTemp  {
-        max-width: 400px;
-    }
-    .st-conts form {
-        width: 100px;
-    }
-
-    .cont-footer {
-        flex-direction: column;
-    }
-
-    .cont-footer div {
-        text-align: center;
-        margin-bottom: 10px;
-        width: 100px;
-    }
-}
-
-@media(max-width:480px) {
-    h1 {
-        font-size: 35px;
-    }
-
-    .img-title {
-        width: 35px;
-    }
-
-    .sctEpisodios, .sctPersonajes{
-        grid-template-columns: 1fr;
-    }
-    .sctTemp  {
-        max-width: 400px;
-    }
-    .st-conts form {
-        width: 100px;
-
-
-    }
+.cont-footer {
+    flex-direction:row;
 }
