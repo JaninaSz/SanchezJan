@@ -1,5 +1,10 @@
 
 @media(max-width:880px) {
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: yellowgreen;
+    }
     .cont-head{
         width: 450px;
         justify-content: space-around;
@@ -15,7 +20,7 @@
         display:block;
         gap: 5px;
     }
-    nav ul li {
+    ul li {
         padding: 3px ;
         margin: 8px;
     }
@@ -29,12 +34,21 @@
     
     .contMain {
         width: auto;
+        position:absolute;
+        
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
     }
     
     .sctTemp  {
         max-width: 400px;
+        padding: 3px;
+        margin: 8px;
     }
-
+    main .dvEpisodios, .dvPersonajes {
+        padding: 5px;
+    }
     .cont-btn{        
 justify-content: space-around;
 
@@ -52,7 +66,12 @@ justify-content: space-around;
 
 /*================================================*/
 
-@media(max-width:501px) {
+@media(max-width:509px) {
+    h2 {
+        font-size: 18px;
+        font-weight: bold;
+        color: yellowgreen;
+    }
     .cont-head{
         width:200px;
         display: block;
@@ -67,7 +86,7 @@ justify-content: space-around;
         display:block;
         gap: 5px;
     }
-    nav ul li {
+     ul li {
         padding: 3px;
         margin: 5px;
     }
@@ -75,20 +94,34 @@ justify-content: space-around;
         margin: 10px 20px;
     }
     main .sctPersonajes{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto;
         padding: 10px;
     }
     main .sctEpisodios{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto;
         padding: 10px;
     }
     .contMain {
         width: auto;
+            position:absolute;
+            margin: auto;
+            min-height: 80%;
+            min-width: 80%;
+        
     }
+
     .sctPersonajes{
         padding: 10px;
     }
     .sctTemp  {
         max-width: 400px;
     }
+
+    main .dvEpisodios, .dvPersonajes {
+        padding: 5px;
+    }
+    main .dvEpisodios{
+        width: 250px;
+    }
 }
+
