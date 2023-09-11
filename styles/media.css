@@ -1,11 +1,11 @@
-
 @media(max-width:880px) {
     h2 {
         font-size: 20px;
         font-weight: bold;
         color: yellowgreen;
     }
-    .cont-head{
+
+    .cont-head {
         width: 450px;
         justify-content: space-around;
     }
@@ -13,48 +13,65 @@
     header img {
         width: 180px;
     }
+
     .img-title {
         width: 35px;
     }
+
     ul {
-        display:block;
+        display: block;
         gap: 5px;
     }
-    ul li {
-        padding: 3px ;
+
+    ul li,
+    .sctTemp li {
+        padding: 5px;
         margin: 8px;
     }
-    .bd-margin{
+
+    ul .sctTemp {
+        max-width: 500px;
+    }
+
+    .bd-margin {
         margin: 15px 30px;
     }
-    main .sctEpisodios, main .sctPersonajes {
+
+    main .sctEpisodios,
+    main .sctPersonajes {
         grid-template-columns: 2fr 1fr;
         padding: 5px;
     }
-    
+
     .contMain {
         width: auto;
-        position:absolute;
-        
+        position: absolute;
+
         margin: auto;
         min-height: 100%;
         min-width: 100%;
     }
-    
-    .sctTemp  {
-        max-width: 400px;
+
+    .sctTemp {
+        align-items:start;
+        max-width: 500px;
         padding: 3px;
-        margin: 8px;
+        margin-top: 8px;
     }
-    main .dvEpisodios, .dvPersonajes {
+
+    main .dvEpisodios,
+    main .dvPersonajes {
         padding: 5px;
     }
-    .cont-btn{        
-justify-content: space-around;
+
+    .cont-btn {
+        justify-content: space-around;
 
     }
+
     .cont-footer {
-        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .cont-footer span {
@@ -66,62 +83,85 @@ justify-content: space-around;
 
 /*================================================*/
 
-@media(max-width:509px) {
+@media(max-width:502px) {
     h2 {
         font-size: 18px;
         font-weight: bold;
-        color: yellowgreen;
+        color: black;
     }
-    .cont-head{
-        width:200px;
+
+    .cont-head {
+        width: 200px;
         display: block;
     }
+
     header img {
         width: 100px;
     }
+
     .img-title {
         width: 45px;
     }
+
     ul {
-        display:block;
+        display: block;
         gap: 5px;
     }
-     ul li {
-        padding: 3px;
-        margin: 5px;
+
+    .sctTemp li,
+    ul li {
+        padding: 5px;
+        margin: 8px;
     }
-    .bd-margin{
+
+    .bd-margin {
         margin: 10px 20px;
     }
-    main .sctPersonajes{
+
+    main .sctPersonajes {
         grid-template-columns: auto;
         padding: 10px;
     }
-    main .sctEpisodios{
+
+    main .sctEpisodios {
         grid-template-columns: auto;
         padding: 10px;
     }
+
     .contMain {
         width: auto;
-            position:absolute;
-            margin: auto;
-            min-height: 80%;
-            min-width: 80%;
-        
+        position: absolute;
+        margin: auto;
+        min-height: 80%;
+        min-width: 80%;
+
     }
 
-    .sctPersonajes{
+    .sctPersonajes {
         padding: 10px;
     }
-    .sctTemp  {
-        max-width: 400px;
+
+    .sctTemp {
+        max-width: 500px;
+        padding: 3px;
+        margin-top: 8px;
     }
 
-    main .dvEpisodios, .dvPersonajes {
+    ul .sctTemp {
+        max-width: 500px;
+    }
+
+    main .dvEpisodios,
+    main .dvPersonajes {
         padding: 5px;
     }
-    main .dvEpisodios{
+
+    main .dvEpisodios {
         width: 250px;
     }
-}
 
+    .cont-footer {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
