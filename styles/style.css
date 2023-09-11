@@ -49,7 +49,6 @@ main .sctPersonajes{
 }
 main .dvEpisodios, .dvPersonajes {
     background-color:  #3f3f3f;
-    width: 200px;
     justify-self: center;
     text-align: center;
     padding: 10px;
@@ -60,6 +59,9 @@ main .dvEpisodios, .dvPersonajes {
 main .dvPersonajes img {
     width: 150px;
     border-radius: 50%;
+}
+.sctEpisodios .dvEpisodios{
+    width: 300px;
 }
 
 main .sctEpisodios{
